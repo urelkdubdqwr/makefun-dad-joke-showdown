@@ -1,3 +1,9 @@
+"""Write the make.fun dad-joke entry to entry.txt.
+
+Output directory is $MAKEFUN_OUTPUT_DIR when set and non-empty, else /output.
+Standard library only; no network, randomness, or clock reads.
+"""
+
 import os
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
